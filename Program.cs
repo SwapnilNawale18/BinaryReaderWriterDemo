@@ -36,7 +36,7 @@ namespace BinaryWriterDemo
             fs = new FileStream(@"/Users/swapnilnawale/Desktop/stud.Dat", FileMode.Open, FileAccess.Read);
             BinaryReader br = new BinaryReader(fs);
             
-            for (int j = 0; j <= numOfStudents; j++)
+            for (int j = 0; j < numOfStudents; j++)
             {
                 studentName = br.ReadString();
                 Console.Write(studentName + "\t");
